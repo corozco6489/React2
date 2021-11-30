@@ -1,0 +1,75 @@
+@import "../../global.scss";
+.footer {
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+
+  .footer_grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile{
+       flex-direction: column; 
+
+      }
+    .nav {
+      flex: 0.5;
+
+      .nav_items {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+        padding: 10px 15px;
+        font-weight: inherit;
+        border: 1px solid white;
+        text-align: center;
+        @include mobile{
+            font-weight: 200;
+            padding: 5px 10px;
+            
+           }
+      }
+    }
+
+    .footer_contact {
+        flex-direction: 0.5;
+      grid-column: 1/2;
+      @include mobile{
+       margin-top: 52px;
+        
+       }
+      .footer_title {
+        font-weight: 400;
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .footer_icons {
+        display: flex;
+        justify-content: space-evenly;
+        
+        .footer_container-icons {
+          display: inline-block;
+          width: 60px;
+          height: 60px;
+          color: #fff;
+          text-align: center;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          justify-content: center;
+          align-items: center;
+          padding: 12px;
+          margin: 12px;
+         
+          
+            .footer-icon {
+                color: inherit;
+                font-size: 30px;
+                text-decoration: none;
+              }
+
+          
+        }
+      }
+    }
+  }
+}

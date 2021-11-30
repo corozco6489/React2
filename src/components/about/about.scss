@@ -1,0 +1,45 @@
+@import "../../global.scss";
+
+.about{
+    height: 100vh;
+    padding-top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .about_picture{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        @include mobile{
+           width: 150px;
+           height: 150px;
+
+          }
+    }
+    .about_copy{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 25px;
+        @include mobile{
+width: 100%;
+font-size: 15px;
+          }
+    }
+    .about_cta{
+        display: inline-block;
+        margin-top: 30px;
+        text-decoration: none;
+        padding: $boton-padding;
+        border-radius: 40px;
+        background-color: yellowgreen;
+        color: white;
+        @include mobile{
+            font-size: 15px;
+
+          }
+    }
+}

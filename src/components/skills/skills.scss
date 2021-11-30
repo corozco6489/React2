@@ -1,0 +1,43 @@
+@import "../../global.scss";
+.skills{
+    height: 100vh;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+    @include mobile{
+       grid-template-columns: 1fr;
+       padding-top: 30px;
+
+      }
+    .skills_texts{
+        .skills_paragraph{
+            margin-bottom: 20px;
+            line-height: 1.5;
+            font-weight: 300;
+            font-size: 25px;
+            @include mobile{
+              font-size: 15px;
+
+              }
+        }
+    }
+    .skills_img{
+        text-align: center;
+        @include mobile{
+display: none;
+          }
+        .skills_picture{
+            max-width: 80%;
+        }
+    }
+    .skills_img--left{
+        text-align: left;
+    }
+
+}

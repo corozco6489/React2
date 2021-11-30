@@ -1,0 +1,53 @@
+@import "../../global.scss";
+
+.testimony {
+  text-align: center;
+  .testimony_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    @include mobile{
+     grid-template-columns: 1fr; 
+    }
+    .testimony_item {
+      width: 95%;
+      margin: 0 auto;
+      background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+      box-shadow: 0 8px 10px rgba(66, 66, 66, 0.5);
+      border-radius: 7px;
+      padding: 30px 25px;
+      color: #fff;
+      margin-bottom: 50px;
+      .testimony_person {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .testimony_img {
+          width: 100px;
+          min-width: 100px;
+          height: 100px;
+          object-fit: cover;
+          object-position: top;
+          border-radius: 50%;
+          border: 3px solid white;
+          margin-left: 30px;
+        }
+
+        .testimony_texts {
+          .testimony_name {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+          }
+          .testimony_verification {
+            color: white;
+            font-weight: 700;
+          }
+        }
+      }
+      .testimony_review {
+        font-weight: 300;
+      }
+    }
+  }
+}
